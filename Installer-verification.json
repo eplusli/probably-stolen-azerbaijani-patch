@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "fixture": "isolated original game files; actual game untouched",
+  "tests": [
+    {
+      "action": "install",
+      "expected_success": false,
+      "exit_code": 1,
+      "seconds": 0.34,
+      "detail": "ERROR: Probably Stolen.exe was not found in the selected folder."
+    },
+    {
+      "action": "install",
+      "expected_success": false,
+      "exit_code": 1,
+      "seconds": 2.39,
+      "detail": "bably Stolen_Data/resources.assets\nOriginal: Probably Stolen_Data/sharedassets0.assets\nOriginal: Probably Stolen_Data/sharedassets1.assets\nOriginal: Probably Stolen_Data/level0\nOriginal: Probably Stolen_Data/level1\nOriginal: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nOriginal: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nERROR: Unsupported build or modified game file: Probably Stolen_Data/StreamingAssets/aa/catalog.json. Expected build 100-REV6. No game files changed."
+    },
+    {
+      "action": "install",
+      "expected_success": true,
+      "exit_code": 0,
+      "seconds": 29.34,
+      "detail": "stalled: Probably Stolen_Data/level0\nInstalled: Probably Stolen_Data/level1\nInstalled: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nInstalled: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nInstalled: Probably Stolen_Data/StreamingAssets/aa/catalog.json\nInstalled: Probably Stolen_Data/Managed/Assembly-CSharp.dll\nInstallation complete. Select Azərbaycan dili in the game's language menu. Save files were preserved.\nOriginal backup: <fixture>\\_AzerbaijaniPatch_Backup_100-REV6"
+    },
+    {
+      "action": "install",
+      "expected_success": true,
+      "exit_code": 0,
+      "seconds": 4.5,
+      "detail": "Patched: Probably Stolen_Data/sharedassets0.assets\nPatched: Probably Stolen_Data/sharedassets1.assets\nPatched: Probably Stolen_Data/level0\nPatched: Probably Stolen_Data/level1\nPatched: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nPatched: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nPatched: Probably Stolen_Data/StreamingAssets/aa/catalog.json\nPatched: Probably Stolen_Data/Managed/Assembly-CSharp.dll\nThe Azerbaijani patch is already installed. Original backups verified."
+    },
+    {
+      "action": "install",
+      "expected_success": false,
+      "exit_code": 1,
+      "seconds": 0.64,
+      "detail": "Checking Probably Stolen build 100-REV6...\nERROR: The patch is installed but a verified original backup is missing: Probably Stolen_Data/resources.assets. Restore is unavailable; restore the original game files first."
+    },
+    {
+      "action": "restore",
+      "expected_success": false,
+      "exit_code": 1,
+      "seconds": 0.97,
+      "detail": "Checking Probably Stolen build 100-REV6...\nERROR: Original backup is damaged: Probably Stolen_Data/resources.assets"
+    },
+    {
+      "action": "restore",
+      "expected_success": true,
+      "exit_code": 0,
+      "seconds": 19.22,
+      "detail": "olen_Data/sharedassets1.assets\nRestored: Probably Stolen_Data/level0\nRestored: Probably Stolen_Data/level1\nRestored: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nRestored: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nRestored: Probably Stolen_Data/StreamingAssets/aa/catalog.json\nRestored: Probably Stolen_Data/Managed/Assembly-CSharp.dll\nRestore complete. Original game files verified. Save files were preserved.\nOriginal backup: <fixture>\\_AzerbaijaniPatch_Backup_100-REV6"
+    },
+    {
+      "action": "verify",
+      "expected_success": true,
+      "exit_code": 0,
+      "seconds": 4.52,
+      "detail": "aredassets0.assets\nOriginal: Probably Stolen_Data/sharedassets1.assets\nOriginal: Probably Stolen_Data/level0\nOriginal: Probably Stolen_Data/level1\nOriginal: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nOriginal: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nOriginal: Probably Stolen_Data/StreamingAssets/aa/catalog.json\nOriginal: Probably Stolen_Data/Managed/Assembly-CSharp.dll\nVerification passed. All 9 files match this patch's supported checksums. The game is unpatched."
+    },
+    {
+      "action": "install",
+      "expected_success": false,
+      "exit_code": 1,
+      "seconds": 30.19,
+      "detail": "_Data/StreamingAssets/aa/catalog.json\nRolled back: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nRolled back: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nRolled back: Probably Stolen_Data/level1\nRolled back: Probably Stolen_Data/level0\nRolled back: Probably Stolen_Data/sharedassets1.assets\nRolled back: Probably Stolen_Data/sharedassets0.assets\nRolled back: Probably Stolen_Data/resources.assets\nERROR: İşlem, başka bir işlem tarafından kullanıldığından dosyaya erişemiyor."
+    },
+    {
+      "action": "install",
+      "expected_success": true,
+      "exit_code": 0,
+      "seconds": 23.5,
+      "detail": "stalled: Probably Stolen_Data/level0\nInstalled: Probably Stolen_Data/level1\nInstalled: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nInstalled: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nInstalled: Probably Stolen_Data/StreamingAssets/aa/catalog.json\nInstalled: Probably Stolen_Data/Managed/Assembly-CSharp.dll\nInstallation complete. Select Azərbaycan dili in the game's language menu. Save files were preserved.\nOriginal backup: <fixture>\\_AzerbaijaniPatch_Backup_100-REV6"
+    },
+    {
+      "action": "restore",
+      "expected_success": true,
+      "exit_code": 0,
+      "seconds": 18.44,
+      "detail": "olen_Data/sharedassets1.assets\nRestored: Probably Stolen_Data/level0\nRestored: Probably Stolen_Data/level1\nRestored: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle\nRestored: Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle\nRestored: Probably Stolen_Data/StreamingAssets/aa/catalog.json\nRestored: Probably Stolen_Data/Managed/Assembly-CSharp.dll\nRestore complete. Original game files verified. Save files were preserved.\nOriginal backup: <fixture>\\_AzerbaijaniPatch_Backup_100-REV6"
+    }
+  ],
+  "all_result_and_backup_hashes_verified": true,
+  "save_sentinel_unchanged": true
+}
